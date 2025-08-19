@@ -1,4 +1,26 @@
-# Fitness_Agent/code/ppp_rag_agent.py
+"""
+ppp_rag_agent.py
+
+Core module for the Peak Parent Playbook (PPP) RAG-based AI assistant.
+
+This script handles:
+- Connecting to the ChromaDB vector store containing embedded professional articles
+- Retrieving contextually relevant documents using semantic embeddings
+- Building prompts based on configuration and retrieved context
+- Generating responses via large language models (OpenAI GPT or Groq)
+- Logging queries, retrieved documents, and LLM responses
+
+Functions:
+- setup_logging: Configure console and file logging
+- retrieve_relevant_documents: Fetch relevant documents from the vector store based on a query
+- respond_to_query: Generate a grounded response using retrieved documents and the selected LLM
+
+The module can also be run interactively from the command line to query the assistant,
+choose LLM backends, and adjust retrieval parameters.
+
+Author: Daniel Krasik
+"""
+
 import os
 import logging
 from dotenv import load_dotenv
@@ -71,25 +93,17 @@ def respond_to_query(prompt_config: dict, query: str, llm, n_results: int = 5, t
     rag_assistant_prompt = build_prompt_from_config(prompt_config, input_data=input_data)
     logging.info(f"RAG assistant prompt: {rag_assistant_prompt}")
 
-    if isinstance(llm, ChatOpenAI):
-        response = llm([HumanMessage(content=rag_assistant_prompt)])
-        return response.content  # ✅ just access content directly
-    elif isinstance(llm, ChatGroq):
-        response = llm.invoke(rag_assistant_prompt)
-        return response.content
-    else:
-        return "Error: Invalid LLM instance."
-
     # Call the chosen LLM
     if isinstance(llm, ChatOpenAI):
-        response = llm([{"role": "user", "content": rag_assistant_prompt}])
-        return response[0].content
+        response = llm([HumanMessage(content=rag_assistant_prompt)])
+        return response.content  
     elif isinstance(llm, ChatGroq):
         response = llm.invoke(rag_assistant_prompt)
         return response.content
     else:
         return "Error: Invalid LLM instance."
 
+# Main function to run the assistant interactively
 if __name__ == "__main__":
     setup_logging()
     app_config = load_yaml(APP_CONFIG_FPATH)

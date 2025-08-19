@@ -1,3 +1,27 @@
+"""
+create_and_ingest_vector_db.py
+
+Module for initializing, managing, and populating a ChromaDB vector store
+with professional articles for the Peak Parent Playbook (PPP) AI assistant.
+
+This script provides utilities for:
+- Creating or retrieving a persistent ChromaDB collection
+- Splitting text documents into pages and semantically meaningful chunks
+- Generating vector embeddings using OpenAI's text-embedding-3-large model
+- Adding articles with embeddings into the vector store for RAG-based retrieval
+
+Functions:
+- init_vector_store: Initialize or reset a ChromaDB collection
+- get_collection: Retrieve an existing ChromaDB collection
+- split_by_pages: Split text into pages based on page markers
+- semantic_sub_chunk: Further split long pages into semantic chunks
+- embed_texts: Convert text chunks into embeddings
+- add_articles: Insert multiple articles into the vector store
+- main: Load all articles and populate the vector store
+
+Author: Daniel Krasik
+"""
+
 import os
 import shutil
 import chromadb
@@ -98,7 +122,7 @@ def main():
     # Ensure environment variables (like OPENAI_API_KEY) are loaded
     ensure_env()
     store = init_vector_store(reset=True)
-    articles = read_all_articles()  # <-- load from utils.py
+    articles = read_all_articles()  
     add_articles(store, articles)
     print(f"Vector store contains {store.count()} documents.")
 

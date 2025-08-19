@@ -1,3 +1,7 @@
+requests~=2.31.0
+beautifulsoup4~=4.12.2
+PyPDF2~=3.1.0
+numpy~=1.26.0
 langchain~=0.3.25
 langchain_openai~=0.3.18
 langchain_groq~=0.3.2

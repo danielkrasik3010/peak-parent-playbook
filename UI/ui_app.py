@@ -1,3 +1,28 @@
+"""
+ui_app.py
+
+Streamlit-based user interface for the Peak Parent Playbook (PPP) AI assistant.
+
+This module provides a fully interactive web application for parents of young athletes,
+allowing them to ask questions about training, nutrition, recovery, and emotional support.
+The interface integrates:
+
+- Environment and configuration management (YAML + .env)
+- RAG-based document retrieval using Chroma vector database
+- Large language model (LLM) response generation via OpenAI GPT or Groq
+- Dynamic user input handling and session state for continuous conversation
+- Custom styling and chat history rendering for an intuitive user experience
+
+Key Features:
+1. Sidebar controls for LLM selection, retrieval thresholds, and top-K results
+2. Semantic search over a curated knowledge base of professional articles
+3. Grounded, evidence-based responses with optional source attribution
+4. Real-time conversational interface with color-coded messages for user and PPP
+5. Easy deployment with Streamlit, requiring minimal setup
+
+Author: Daniel Krasik
+"""
+
 import sys
 import os
 import streamlit as st
@@ -64,11 +89,9 @@ h1, h2, h3, h4 {color: #111827;}
 # -------------------------
 # Header section with logo / top image
 # -------------------------
-# If the image is in the same folder as this script:
 st.image(r"C:\Users\97254\Documents\Ready_Tensor_AI_Course\course_workspace\Fitness_Agent\data\father_and_son.jpg", width=250)
 
-# OR if the image is in a "data" subfolder:
-# st.image("data/father_and_son.jpg", width=250)
+
 
 st.markdown(
     """

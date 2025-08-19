@@ -1,3 +1,24 @@
+"""
+scrape_articles.py
+
+Module for scraping and saving online articles and PDF documents for the Peak Parent Playbook (PPP) project.
+
+This script provides functionality to:
+- Download and parse HTML pages or PDF files
+- Extract readable text content from articles and PDF pages
+- Save the extracted content as structured Markdown files
+- Handle multiple URLs with automated detection of file type (HTML or PDF)
+- Centralize data storage in a predefined directory
+
+Key Functions:
+- save_markdown: Save scraped content as a Markdown file with a safe filename
+- scrape_html: Scrape an HTML page and extract text content
+- scrape_pdf: Download and extract text from a PDF document
+- scrape_and_save_articles: High-level function to scrape multiple URLs and save them
+
+Author: Daniel Krasik
+"""
+
 import os
 import re
 import sys
@@ -9,7 +30,7 @@ from typing import List, Union
 from datetime import datetime
 import PyPDF2
 from io import BytesIO
-from paths import DATA_DIR  # <-- Import your centralized data directory path
+from paths import DATA_DIR  
 
 
 def save_markdown(title: str, content: str, output_dir: Path):
@@ -73,7 +94,7 @@ def scrape_pdf(url: str, headers: dict, output_dir: Path):
 
 def scrape_and_save_articles(
     urls: Union[str, List[str]],
-    output_dir: Path = Path(DATA_DIR),  # Use centralized DATA_DIR here
+    output_dir: Path = Path(DATA_DIR),  
     user_agent: str = (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -107,10 +128,6 @@ def scrape_and_save_articles(
 if __name__ == "__main__":
     try:
         scrape_and_save_articles([
-            # "https://kidshealth.org/en/parents/feed-child-athlete.html",
-            # "https://nextlevelathleticsusa.com/athlete-training/best-youth-athlete-training-exercises/",
-            # "https://memphisyouthathletics.org/what-recovery-techniques-are-best-for-young-athletes/",
-            # "https://appliedsportpsych.org/resources/resources-for-parents/dos-and-donts-for-parents-of-young-athletes/",
             "https://www.stlouischildrens.org/sites/legacy/files/2020-05/383626_SLC%20YAC%20Strength%20Training%20Exercise%20Program%20Booklet_WEB.pdf",
             'https://www.sportsdietitians.com.au/wp-content/uploads/2015/04/SDA_Junior-Athlete_FINAL.pdf',
             'https://youthsports.rutgers.edu/wp-content/uploads/Guidelines-for-Supportive-Parents.pdf'

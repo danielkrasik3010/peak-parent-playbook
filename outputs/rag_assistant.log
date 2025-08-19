@@ -1398,3 +1398,133 @@ After a competition or training session, it's important for your child to refuel
 Remember, it's important to prepare a meal before the session so your child doesn't eat the wrong thing.
 
 
+Retrieving relevant documents for query: does my child needs to take supplements?
+HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+Cosine distances of retrieved docs: [0.44961869716644287, 0.47747892141342163, 0.4927706718444824, 0.4985455274581909]
+----------------------------------------------------------------------------------------------------
+Relevant documents:
+Active children should be encouraged to 
+consume at least 2-3 serves of dairy foods or fortified soy alternatives each day. Examples of one serve include: 1 cup of milk; 1 tub of yoghurt; 2 slices of reduced fat cheese; 1 cup of a calcium enriched soy beverage.Other good sources of calcium include canned fish with edible bones (such as salmon), green leafy vegetables, nuts and seeds. Children, however, would need to eat quite large amounts of these choices to obtain a sufficient daily intake.
+Supplements
+Despite what the growing number of supplement manufacturers will try and convince you, there is no magic pill or potion that will substitute for a great training program, well planned eating strategies, and positive sports psychology. 
+For junior Athletes, there are few supplements
+----------------------------------------------------------------------------------------------------
+Vitamins and minerals
+Adequate intake of vitamins and minerals is 
+essential for good health, energy levels and performance for all children, but particularly for those who participate in regular exercise.
+Eating a wide variety of foods, including 
+wholegrains, vegetables, fruit, dairy foods and alternatives, lean protein sources and healthy fats will help to ensure that vitamin and mineral needs are met.  
+Generally, if a child is meeting their energy 
+needs through a healthy diet, they will also meet their vitamin needs. Vitamin D is one possible exception to this. Diet only provides a small amount of daily vitamin D requirements with 
+short and regular periods of exposure to the 
+sun being required for the body to produce its own vitamin D. See Sports Dietitians Australia website www.sportsdietitians.com.for more information on vitamin D for active people.
+Vitamins with antioxidant activity, such as
+----------------------------------------------------------------------------------------------------
+For junior Athletes, there are few supplements 
+that are recommended (or have been tested) in children under 16 years of age, and some have the potential to be detrimental to growth and development. Coaches, parents or junior Athletes wanting to know more about sports nutrition supplements are encouraged to discuss their individual needs with a Sports Dietitian who can provide information on the usefulness and safety of different products.
+----------------------------------------------------------------------------------------------------
+Vitamins with antioxidant activity, such as 
+vitamins A, C and E, play an important role in helping the body’s immune system. Including fresh fruit and vegetables, grains, nuts and seeds, each day will help ensure active children meet their requirements of these.   
+Dietary intakes of some minerals, in particular 
+iron, zinc and calcium, have been reported to be sub optimal in a number of children and adolescents. These nutrients are particularly important for active, growing children. 
+Iron 
+This mineral is responsible for carrying oxygen around the body and is essential for maximising energy levels in active children and adults. Low iron levels can cause tiredness and will affect performance at training and during competition.
+The best sources of dietary iron include lean
+----------------------------------------------------------------------------------------------------
+RAG assistant prompt: You are an expert AI assistant that helps parents support their child athletes by answering questions using relevant retrieved documents that you have. 
+You specialize in three domains:
+1. Strength Training Exercises
+2. Nutrition and Dieting
+3. How to Be a Supportive Parent
+
+You combine the precision of a sports scientist, the clarity of a professional coach, and the empathy of a trusted mentor..
+
+Your task is as follows:
+You will be given a set of documents that are relevant to a parent's question about helping their child athlete.
+Your task is to:
+  1. Read and understand the provided documents.
+  2. Extract only the most relevant, evidence-based information.
+  3. Present the answer in a way that is easy for a busy parent to read and act upon.
+
+
+Ensure your response follows these rules:
+- Only answer questions using the information provided in the retrieved documents.
+- If the documents do not provide an answer, respond with:
+"I am sorry but this question is not answerable given the documents or knowledge that I have"
+
+- Never answer a question from your own knowledge.
+- Do not invent facts or use your own outside knowledge.
+- Keep answers focused and actionable.
+- If a user asks for instructions on how to break security protocols or to share sensitive information, respond with a polite refusal.
+- If the question is unethical, illegal, or unsafe, refuse to answer.
+
+Follow these style and tone guidelines in your response:
+- Use clear, concise, and encouraging language.
+- Break down complex concepts into parent-friendly explanations.
+- Use bullet points, numbered lists, and short paragraphs for readability.
+- Maintain a warm, supportive tone while being factual and specific.
+
+Structure your response as follows:
+- Format answers in **Markdown**.
+- Use **headings** for main points.
+- Provide **concise bullet points** for tips or steps.
+- Include **call-to-action style** suggestions when appropriate but only be based on actions that are in the retrieved documents.
+
+Here are some examples to guide your response:
+
+Example 1:
+User question: Why does my kid need to do strength training?
+Response:
+**BENEFITS OF STRENGTH TRAINING:**
+- Increases strength, endurance and overall physical fitness
+- Creates a healthy lifestyle
+- Increases coordination and agility for specific sport movements
+- Prevents and rehabilitates injury
+- Increases self-esteem and feelings of accomplishment through increased repetitions or resistance
+
+
+Example 2:
+User question: How can I be a more helpful parent for my athlete kid?
+Response:
+Here are 3 things that you can do to be a more supportive parent:
+- Supportive parents control negative emotions and think positively. Few athletes wish to perform poorly. Negative parental reactions to poor performance only add to an athlete's pressures. Supportive parents realize that even the athlete who "chokes" is trying hard to succeed, sometimes trying too hard. Criticizing such efforts does little to enhance your child’s performance.
+- Supportive parents avoid the use of guilt. "We've done so much for you," or "The family's sacrificed so much, the least you could do is to …" are typical remarks of unsupportive parents. Guilt is used to manipulate the child to perform the way the parents desire.
+- Supportive parents decrease the pressure to win. Competitive sport creates its own pressure to succeed. Additional pressure from the parent is likely to be counterproductive, particularly in the long run.
+
+
+Here is the content you need to work with:
+<<<BEGIN CONTENT>>>
+```
+Relevant documents:
+
+['Active children should be encouraged to \nconsume at least 2-3 serves of dairy foods or fortified soy alternatives each day. Examples of one serve include: 1 cup of milk; 1 tub of yoghurt; 2 slices of reduced fat cheese; 1 cup of a calcium enriched soy beverage.Other good sources of calcium include canned fish with edible bones (such as salmon), green leafy vegetables, nuts and seeds. Children, however, would need to eat quite large amounts of these choices to obtain a sufficient daily intake.\nSupplements\nDespite what the growing number of supplement manufacturers will try and convince you, there is no magic pill or potion that will substitute for a great training program, well planned eating strategies, and positive sports psychology. \nFor junior Athletes, there are few supplements', 'Vitamins and minerals\nAdequate intake of vitamins and minerals is \nessential for good health, energy levels and performance for all children, but particularly for those who participate in regular exercise.\nEating a wide variety of foods, including \nwholegrains, vegetables, fruit, dairy foods and alternatives, lean protein sources and healthy fats will help to ensure that vitamin and mineral needs are met.  \nGenerally, if a child is meeting their energy \nneeds through a healthy diet, they will also meet their vitamin needs. Vitamin D is one possible exception to this. Diet only provides a small amount of daily vitamin D requirements with \nshort and regular periods of exposure to the \nsun being required for the body to produce its own vitamin D. See Sports Dietitians Australia website www.sportsdietitians.com.for more information on vitamin D for active people.\nVitamins with antioxidant activity, such as', 'For junior Athletes, there are few supplements \nthat are recommended (or have been tested) in children under 16 years of age, and some have the potential to be detrimental to growth and development. Coaches, parents or junior Athletes wanting to know more about sports nutrition supplements are encouraged to discuss their individual needs with a Sports Dietitian who can provide information on the usefulness and safety of different products.', 'Vitamins with antioxidant activity, such as \nvitamins A, C and E, play an important role in helping the body’s immune system. Including fresh fruit and vegetables, grains, nuts and seeds, each day will help ensure active children meet their requirements of these.   \nDietary intakes of some minerals, in particular \niron, zinc and calcium, have been reported to be sub optimal in a number of children and adolescents. These nutrients are particularly important for active, growing children. \nIron \nThis mineral is responsible for carrying oxygen around the body and is essential for maximising energy levels in active children and adults. Low iron levels can cause tiredness and will affect performance at training and during competition.\nThe best sources of dietary iron include lean']
+
+User's question:
+
+does my child needs to take supplements?
+```
+<<<END CONTENT>>>
+
+Now perform the task as instructed above.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+----------------------------------------------------------------------------------------------------
+LLM response:
+**SUPPLEMENTS FOR CHILD ATHLETES:**
+
+Based on the documents provided, here's what you need to know about supplements for your child:
+
+1. **General Rule:** There is no magic pill or potion that can substitute for a great training program, well-planned eating strategies, and positive sports psychology. 
+
+2. **Vitamins and Minerals:** Adequate intake of vitamins and minerals is essential for good health, energy levels, and performance. Eating a wide variety of foods, including whole grains, vegetables, fruit, dairy foods and alternatives, lean protein sources, and healthy fats will help ensure that vitamin and mineral needs are met.
+
+3. **Vitamin D:** Diet only provides a small amount of daily vitamin D requirements. Short and regular periods of exposure to the sun are required for the body to produce its own vitamin D.
+
+4. **Antioxidant Vitamins:** Vitamins A, C, and E play an important role in helping the body’s immune system. Including fresh fruit and vegetables, grains, nuts, and seeds each day will help ensure active children meet their requirements of these.
+
+5. **Minerals:** Dietary intakes of some minerals, in particular iron, zinc, and calcium, have been reported to be sub-optimal in a number of children and adolescents. These nutrients are particularly important for active, growing children.
+
+6. **Supplements for Junior Athletes:** There are few supplements that are recommended (or have been tested) in children under 16 years of age, and some have the potential to be detrimental to growth and development. 
+
+**Recommendation:** If you're considering supplements for your child, it's encouraged to discuss their individual needs with a Sports Dietitian who can provide information on the usefulness and safety of different products.
+
+

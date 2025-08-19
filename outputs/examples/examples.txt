@@ -1,0 +1,97 @@
+** examples of the PPP Agent responses for user  different questions **
+
+Example 1 nutrution:
+
+User's question:
+what my child need to eat?
+
+LLM response:
+**CHILD ATHLETE NUTRITION:**
+
+Your child athlete needs a balanced diet to maintain their energy levels and perform at their best. Here are some key components of their diet:
+
+**1. Carbohydrates:**
+Carbohydrates are essential for energy. Ensure your child has frequent opportunities to eat foods rich in carbohydrates. Some examples include:
+
+- Bread and other cereal products
+- Pasta
+- Rice
+- Fruit
+- Starchy vegetables
+- Calcium-rich dairy foods
+
+**2. Protein:**
+Protein is crucial for muscle recovery and growth. Include protein-rich foods in your child's meals. Some examples include:
+
+- Chicken
+- Tuna
+- Cheese
+- Egg
+
+**3. Balanced Meals:**
+A balanced meal should include a mix of carbohydrates, protein, and vegetables. Here are some meal ideas:
+
+- Soup with a cheese sandwich
+- Sushi handrolls
+- Sandwich, roll, or wrap with protein filling (e.g., chicken, tuna, cheese, or egg) with salad
+- Glass of milk and a piece of fruit
+- Liquid meal supplement
+- Small tin of tuna with dry biscuits
+- Chicken and pasta salad
+
+**4. Post-Event Recovery Meals:**
+After a competition or training session, it's important for your child to refuel their body. A recovery meal should include protein, veggies, and a carbohydrate. Here's an example:
+
+- A meal made up of a protein (like tuna), veggies (like salad), and a carbohydrate (like brown rice, quinoa, or a wrap).
+
+Remember, it's important to prepare a meal before the session so your child doesn't eat the wrong thing.
+
+
+Example 2 parent support:
+
+User's question:
+
+what emotions do I need to show to my young athlete?
+
+**EMOTIONS TO SHOW TO YOUR YOUNG ATHLETE:**
+
+1. **Positivity:** Supportive parents control negative emotions and think positively. Even when your child doesn't perform as expected, remember that they are trying their best. Criticizing their efforts does little to enhance their performance.
+
+2. **Empathy:** Understand what your child is feeling and be aware of the pressures and demands that the sport places on them. Empathy is not sympathy or agreement but rather is a true understanding that the task is difficult. 
+
+3. **Avoidance of Guilt:** Avoid using guilt to manipulate your child to perform the way you desire. Statements like "We've done so much for you," or "The family's sacrificed so much, the least you could do is to �" are not supportive.
+
+4. **Avoidance of Fear:** Avoid using fear as a motivator. Punishment and withdrawal of love can pressure kids to perform better, but such strategies tend to trade short-term performance gains for long-term emotional risks to the youngster's health and well-being.
+
+5. **Understanding:** Recognize and understand expressions of insecurity. When children are nervous, uncertain, or feeling pressured, do not trivialize their fears or see such concerns as signs of weakness. These expressions are normal and are usually a call for emotional support.
+
+Remember, your role as a parent is to provide emotional support to your child, helping them navigate the pressures and demands of their sport.
+
+Example 3 supplements:
+
+User's question:
+does my child needs to take supplements?
+
+LLM response:
+**SUPPLEMENTS FOR CHILD ATHLETES:**
+
+Based on the documents provided, here's what you need to know about supplements for your child:
+1. **General Rule:** There is no magic pill or potion that can substitute for a great training 
+program, well-planned eating strategies, and positive sports psychology.
+
+2. **Vitamins and Minerals:** Adequate intake of vitamins and minerals is essential for good health, energy levels, and performance. Eating a wide variety of foods, including whole grains, vegetables, fruit, dairy foods and alternatives, lean protein sources, and healthy fats will help ensure that vitamin and mineral needs are met.
+
+3. **Vitamin D:** Diet only provides a small amount of daily vitamin D requirements. Short and 
+regular periods of exposure to the sun are required for the body to produce its own vitamin D. 
+
+4. **Antioxidant Vitamins:** Vitamins A, C, and E play an important role in helping the body’s 
+immune system. Including fresh fruit and vegetables, grains, nuts, and seeds each day will help ensure active children meet their requirements of these.
+
+5. **Minerals:** Dietary intakes of some minerals, in particular iron, zinc, and calcium, have 
+been reported to be sub-optimal in a number of children and adolescents. These nutrients are particularly important for active, growing children.
+
+6. **Supplements for Junior Athletes:** There are few supplements that are recommended (or have been tested) in children under 16 years of age, and some have the potential to be detrimental 
+to growth and development.
+
+**Recommendation:** If you're considering supplements for your child, it's encouraged to discuss their individual needs with a Sports Dietitian who can provide information on the usefulness 
+and safety of different products.

@@ -1,3 +1,26 @@
+"""
+prompt_builder_final.py
+
+Module for constructing and managing AI prompts for the Peak Parent Playbook (PPP) assistant.
+
+This script provides utilities to:
+- Build structured prompts from YAML configuration files
+- Include role, instructions, context, style/tone, examples, and output constraints
+- Incorporate input data and optional reasoning strategies
+- Preview and save prompts as Markdown files for documentation or debugging
+- Load YAML configuration files
+
+Key Functions:
+- lowercase_first_char: Helper to lowercase the first character of a string
+- format_prompt_section: Format individual sections of a prompt
+- build_prompt_from_config: Construct a full prompt based on config, input, and app settings
+- print_prompt_preview: Display a preview of the constructed prompt
+- save_prompt_to_md: Save the prompt to a Markdown file
+- load_yaml_config: Load configuration from a YAML file
+
+Author: Daniel Krasik
+"""
+
 import os
 import yaml
 from typing import Optional, Dict, Any
@@ -115,8 +138,7 @@ def load_yaml_config(filepath: str) -> Dict[str, Any]:
 
 
 if __name__ == "__main__":
-    # Adjust this path to your real prompt_config YAML location
-    prompt_key = "rag_PPP_prompt"  # Change to your prompt key
+    prompt_key = "rag_PPP_prompt"  
 
     # Load prompt config YAML
     prompt_config = load_yaml_config(PROMPT_CONFIG_FPATH)
@@ -126,7 +148,6 @@ if __name__ == "__main__":
 
     prompt_data = prompt_config[prompt_key]
 
-    # Optional: load app config if you want reasoning strategies etc.
     app_config_path = os.path.join("code", "config", "app_config.yaml")
     if os.path.exists(app_config_path):
         app_config = load_yaml_config(app_config_path)

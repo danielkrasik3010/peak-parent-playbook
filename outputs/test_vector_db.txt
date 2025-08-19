@@ -1,0 +1,99 @@
+ID: article_0_page_0_chunk_0
+Doc:
+# 383626_SLC%20YAC%20Strength%20Training%20Exercise%20Program%20Booklet_WEB.pdf
+
+Cosine similarity: 0.3576
+------------------------------------------------------------
+
+ID: article_0_page_1_chunk_0
+Doc:
+Strength Training Exercise Program
+
+Cosine similarity: 0.4344
+------------------------------------------------------------
+
+ID: article_0_page_2_chunk_0
+Doc:
+STRENGTH TRAINING EXERCISE PROGRAM
+Strength training can help young athletes increase strength 
+and overall health when performed in a safe, supervised 
+environment. By focusing more on proper technique and less on 
+the amount of resistance, the benefits of youth strength training 
+far outweigh the risks. 
+Before beginning any strength training program, consult your 
+primary care provider if you have any questions about whether 
+your child should participate. It’s also important to follow 
+the guidelines of a well-designed program and have adult 
+supervision. Most injuries that occur during strength training are 
+due to improper technique, misuse of equipment and/or lifting 
+inappropriate amounts of weight. 
+RULES OF STRENGTH TRAINING:
+• Always have adult supervision
+• Always have a person spotting when using weights  
+and resistance
+• Use equipment properly
+• No horseplay
+• Always put equipment away after useKEYS TO A SUCCESSFUL STRENGTH TRAINING PROGRAM:
+
+Cosine similarity: 0.4307
+------------------------------------------------------------
+
+ID: article_0_page_2_chunk_1
+Doc:
+• Always have a person spotting when using weights  
+and resistance
+• Use equipment properly
+• No horseplay
+• Always put equipment away after useKEYS TO A SUCCESSFUL STRENGTH TRAINING PROGRAM: 
+• Warm-up before and cool-down after each workout 
+• Focus on proper technique and form (see exercise 
+descriptions and pictures)
+• Strength training sessions should be done 2-3 times  
+per week (non-consecutively)
+ –Strength training sessions should last at least  
+20-30 minutes 
+ –Each session should include 6-8 exercises with  
+2-3 exercises per muscle group
+ –Start with 1-2 sets of 10-15 repetitions (reps),  
+moving up to 2-3 sets
+ –Single ‘maximum’ repetitions should be avoided until  
+a young athlete has finished puberty
+• Start each session with more complex exercises, then 
+progress to more isolated exercises
+ –Complex exercises: These exercises usually work 
+major muscle groups and/or multiple muscle groups 
+throughout the exercise.
+
+Cosine similarity: 0.4521
+------------------------------------------------------------
+
+ID: article_0_page_2_chunk_2
+Doc:
+progress to more isolated exercises
+ –Complex exercises: These exercises usually work 
+major muscle groups and/or multiple muscle groups 
+throughout the exercise.
+ –Isolated exercises: These exercises usually work one 
+muscle or minor muscle groups.
+• Increase weight, sets and/or reps slowly 
+ –Increase weight by 5-10% when the athlete can do  
+15 reps without muscle failure.
+ –Be patient. Expect to see results after 8-12 weeks  
+of strength training.
+ –Be consistent. Strength decreases 3% each week, 
+with gains completely lost 8 weeks after discontinuing 
+strength training.
+• Allow muscles to recover by having at least one  
+rest or cross training day in between each strength 
+training session.
+BENEFITS OF STRENGTH TRAINING: 
+• Increases strength, endurance and overall  
+physical fitness
+• Creates a healthy lifestyle
+• Increases coordination and agility for specific  
+sport movements
+• Prevents and rehabilitates injury
+• Increases self-esteem and feelings of accomplishment
+
+Cosine similarity: 0.4725
+------------------------------------------------------------

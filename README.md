@@ -276,7 +276,7 @@ streamlit run UI/ui_app.py
 
 "does my child needs to take supplements?"
 
-# You can look at bthe examples.txt file to see the responses of the LLM to the Users questions
+# You can look at the examples.txt file to see the responses of the LLM to the Users questions
 
 # Contact & License
 Contact & License

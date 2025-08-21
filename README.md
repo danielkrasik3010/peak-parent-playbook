@@ -239,11 +239,11 @@ Fitness_Agent/
 
 
 git clone https://github.com/danielkrasik3010/peak-parent-playbook
-cd Fitness_Agent
+cd peak-parent-playbook
 python -m venv venv
 # Activate the virtual environment
 # macOS / Linux:
-source venv/bin/activate
+.\venv\Scripts\Activate
 # Windows:
 # venv\Scripts\activate
 pip install -r requirements.txt

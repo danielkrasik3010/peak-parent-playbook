@@ -263,10 +263,10 @@ python -m src.prompt_builder_final
 
 **Create and ingest vector db:**
 
-python src/create_and_ingest_vector_db.py 
+python -m src.create_and_ingest_vector_db 
 
 **Run and test the agent inside vs:**
-python src/ppp_rag_agent.py 
+python -m src.ppp_rag_agent 
 
 **Run chat interface:**
 streamlit run UI/ui_app.py

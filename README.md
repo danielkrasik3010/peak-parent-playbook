@@ -256,10 +256,10 @@ GROQ_API_KEY=...
 
 **Scrape articles:**
 
-python src/scrape_articles.py
+python src/scrape.py
 
 **Create the prompt:**
-python src/prompt_builder_final.py
+python -m src.prompt_builder_final
 
 **Create and ingest vector db:**
 

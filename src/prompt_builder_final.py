@@ -138,8 +138,7 @@ def load_yaml_config(filepath: str) -> Dict[str, Any]:
 
 
 if __name__ == "__main__":
-    prompt_key = "rag_PPP_prompt"  
-
+    prompt_key = "rag_ppp_assistant_prompt" 
     # Load prompt config YAML
     prompt_config = load_yaml_config(PROMPT_CONFIG_FPATH)
 
